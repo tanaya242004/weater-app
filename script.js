@@ -13,7 +13,7 @@ const options = {
 //     })
 //     console.log(inputValue);
     
- fetch('https://yahoo-weather5.p.rapidapi.com/weather?location=mumbai&format=json&u=c',options)
+ fetch('https://yahoo-weather5.p.rapidapi.com/weather?location=Rajasthan&format=json&u=c',options)
      .then(Response=>Response.json())
      .then(Response=>{
          console.log(Response)
