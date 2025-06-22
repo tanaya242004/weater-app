@@ -71,13 +71,13 @@ const options = {
     
 
 
-// fetch('https://yahoo-weather5.p.rapidapi.com/weather?location=Kolkata&format=json&u=c',options)
-//     .then(Response=>Response.json())
-//     .then(Response=>{
-//         console.log(Response)
-//         let Forcast=Response.forecasts[0]; 
-//         document.getElementById('High').innerHTML =Forcast.high;
-//         document.getElementById('low').innerHTML =Forcast.low;
-//         document.getElementById('Sky').innerHTML =Forcast.text;
-//     })
-//     .catch(err=>console.error(err));
+fetch('https://yahoo-weather5.p.rapidapi.com/weather?location=Kolkata&format=json&u=c',options)
+    .then(Response=>Response.json())
+    .then(Response=>{
+        console.log(Response)
+        let Forcast=Response.forecasts[0]; 
+        document.getElementById('High').innerHTML =Forcast.high;
+        document.getElementById('low').innerHTML =Forcast.low;
+        document.getElementById('Sky').innerHTML =Forcast.text;
+    })
+    .catch(err=>console.error(err));
