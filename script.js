@@ -49,8 +49,19 @@ const options = {
             weatherText === "Rainy" ||
             weatherText === "Showers" ||
             weatherText === "Thunderstorms" ||
-            weatherText === "Drizzle"
-        ) {
+            weatherText === "Drizzle" ||
+            weatherText === "Scattered Showers" ||
+            weatherText === "Light Rain" ||
+            weatherText === "Heavy Rain" ||
+            weatherText === "Rain Showers" ||
+            weatherText === "Isolated Thunderstorms" ||
+            weatherText === "Scattered Thunderstorms" ||
+            weatherText === "Light Rain Showers" ||
+            weatherText === "Heavy Rain Showers" ||
+            weatherText === "Rain and Snow" ||
+            weatherText === "scattered showers" 
+        ) 
+        {
             document.getElementById('main3').style.color = "blue";
             document.getElementById('sym').innerHTML = "🌧️";
         }
