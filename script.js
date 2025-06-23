@@ -1,7 +1,7 @@
 const options = {
 	method: 'GET',
 	headers: {
-		'x-rapidapi-key': '7ce39d5f5amshb7efffdb1963b94p192e51jsn3d08077a5fd6',
+		//'x-rapidapi-key': 'de9490d9d3msh4184ff6b3384db6p1edda6jsn2b8ef2401d6e',
 		'x-rapidapi-host': 'yahoo-weather5.p.rapidapi.com'
 	}
 };
