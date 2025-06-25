@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Create a blurred background using a pseudo-element */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://images.unsplash.com/photo-1745412256372-b5d2b1d52156?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: blur(8px);
+    z-index: 0;
+}
+
+/* Main container for the contact box */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    z-index: 1; /* Ensure it appears above the blurred background */
+}
+
+/* Contact box styling */
+.container {
+    background-color: rgba(255, 255, 255, 0.8); /* Translucent effect */
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 400px;
+    border: 2px solid black;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: Dancing Script;
+    height: 300px;
+    font-weight: bold;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    opacity:0.6;
+}
+
+/* Button group styling */
+.btngroup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.fam {
+    font-family: Dancing Script;
+}
